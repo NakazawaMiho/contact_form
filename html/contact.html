@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact|中澤 美歩</title>
+    <!-- <link rel="stylesheet" href="file:///C:\xampp\htdocs\contact_form\css\contact.css"> -->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body id="contact">
+    <!-- wrap始まり -->
+    <div id="wrap">
+        <div class="content">
+            <div class="main-center">
+                <h1>Contact</h1>
+                <p>中澤美歩へのアクセス方法、お問合せフォームのページです。お気軽にお問合せください。</p>
+                <section class="access clearfix">
+                    <h2 class="icon">Acsess</h2>
+                    <table>
+                        <tr>
+                            <th>所在地住所</th>
+                            <td>〒987-6543 パークハイム浦和</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>109-8765-4321</td>
+                        </tr>
+                        <tr>
+                            <th>電車でのアクセス</th>
+                            <td>JR京浜東北線 南浦和駅より徒歩10分</td>
+                            <!-- <td>JR京浜東北線 浦和駅より徒歩15分</td> -->
+                        </tr>
+                        <tr>
+                            <th>お車でのアクセス</th>
+                            <td>駐車スペースが少ないため、<br>公共交通機関でお越しください！</td>
+                        </tr>
+                    </table>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.8663525250363!2d139.66381101475122!3d35.85228052818047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ea96a941ef51%3A0xdc8553073687b7cb!2z44OR44O844Kv44OP44Kk44Og5rWm5ZKM!5e0!3m2!1sja!2sjp!4v1566007603675!5m2!1sja!2sjp"
+                        width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h2 class="icon">Contact form</h2>
+                    <div class="form">
+                        <form method="POST" action="../php/contact.php">
+                            <dl>
+                                <dt><span class="required">お名前</span></dt>
+                                <dd><input type="text" name="name" class="name" required></dd>
+                                <dt><span class="required">メールアドレス</span></dt>
+                                <dd><input type="email" name="email" class="email" required></dd>
+                                <dt>お電話番号</dt>
+                                <dd><input type="tel" name="tel" class="tel"></dd>
+                                <dt>お問合せ種別</dt>
+                                <dd>
+                                    <select name="type" class="type">
+                                        <option value="プログラミング講座">プログラミング講座のご案内</option>
+                                        <option value="WEBアプリ作成">WEBアプリ作成のご依頼</option>
+                                        <option value="その他">その他お問い合わせ</option>
+                                    </select>
+                                </dd>
+                                <dt>ご希望のご連絡方法</dt>
+                                <dd>
+                                    <input type="radio" name="contact" value="メール">メール
+                                    <input type="radio" name="contact" value="お電話">お電話
+                                </dd>
+                                <dt>メッセージ</dt>
+                                <dd><textarea name="message" class="message"></textarea></dd>
+                            </dl>
+                            <button type="submit">送信</button>
+                        </form>
+                        <div class="attention">
+                            <p>※ 「<span class="required"></span>」の付いている項目は必須項目です。<br>※メッセージ送信後、48時間以内に担当者よりご連絡します。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- wrap終わり -->
+
+    <!-- footerはじまり -->
+    <footer>
+        <small>(c)2019 Miho Nakazawa.</small>
+    </footer>
+    <!-- footer終わり -->
+</body>
+
+</html>
